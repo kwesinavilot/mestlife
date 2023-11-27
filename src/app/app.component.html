@@ -1,9 +1,13 @@
 <div class="wrapper p-0">
   <app-navbar></app-navbar>
 
-  <app-sidebar class="d-block"></app-sidebar>
+  <div class="row p-0">
+    <app-sidebar class="d-block col-2"></app-sidebar>
 
-  <app-footer></app-footer>
+    <div class="col-10 content py-5 px-4">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 
-  <router-outlet></router-outlet>
+  <app-footer class="p-0"></app-footer>
 </div>

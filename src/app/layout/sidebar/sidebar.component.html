@@ -1,33 +1,37 @@
-<div class="d-flex flex-column flex-shrink-0 py-5 px-4 bg-body-tertiary" style="width: 20%;">
-    <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item">
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none" width="16" height="16"><use xlink:href="#home"></use></svg>
-          Home
-        </a>
-      </li>
+<div class="d-flex flex-column flex-shrink-0 py-5 bg-body-tertiary border-end border-2 border-black-subtle">
+    <ul class="nav nav-pills flex-column mb-auto p-0">
       <li>
-        <a href="#" class="nav-link link-body-emphasis">
+        <a [routerLink]="['/']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}" class="nav-link link-body-emphasis">
           <svg class="bi pe-none" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
           Dashboard
         </a>
       </li>
+
       <li>
-        <a href="#" class="nav-link link-body-emphasis">
+        <a [routerLink]="['/attendance']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}" class="nav-link link-body-emphasis">
           <svg class="bi pe-none" width="16" height="16"><use xlink:href="#table"></use></svg>
-          Orders
+          Attendance
         </a>
       </li>
+
       <li>
-        <a href="#" class="nav-link link-body-emphasis">
+        <a [routerLink]="['/leave']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}" class="nav-link link-body-emphasis">
           <svg class="bi pe-none" width="16" height="16"><use xlink:href="#grid"></use></svg>
-          Products
+          Leave
         </a>
       </li>
+
       <li>
-        <a href="#" class="nav-link link-body-emphasis">
+        <a [routerLink]="['/analytics']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}" class="nav-link link-body-emphasis">
           <svg class="bi pe-none" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-          Customers
+          Analytics
+        </a>
+      </li>
+
+      <li>
+        <a [routerLink]="['/users']" [routerLinkActive]="'menu-active'" [routerLinkActiveOptions]="{exact: true}" class="nav-link link-body-emphasis">
+          <svg class="bi pe-none" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+          Users
         </a>
       </li>
     </ul>
